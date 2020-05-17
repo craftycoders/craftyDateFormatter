@@ -5,11 +5,15 @@
 [![License](https://img.shields.io/cocoapods/l/craftyDateFormatter.svg?style=flat)](https://cocoapods.org/pods/craftyDateFormatter)
 [![Platform](https://img.shields.io/cocoapods/p/craftyDateFormatter.svg?style=flat)](https://cocoapods.org/pods/craftyDateFormatter)
 
+Formatting dates has always been a pain. Writing extensions at the beginning of each project for the attempt to make things easy is ideal but repetitive. This library allows you to get the same results with way less effort. Clean and elegant. See for yourself!
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+- iOS 12.0
+- Swift 5.0
 
 ## Installation
 
@@ -19,10 +23,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'craftyDateFormatter'
 ```
-
-## Author
-
-craftycoders, lyle@craftycoders.io
 
 ## License
 
