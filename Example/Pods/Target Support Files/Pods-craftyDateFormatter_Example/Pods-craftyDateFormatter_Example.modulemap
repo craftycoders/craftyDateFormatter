@@ -1,0 +1,6 @@
+framework module Pods_craftyDateFormatter_Example {
+  umbrella header "Pods-craftyDateFormatter_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

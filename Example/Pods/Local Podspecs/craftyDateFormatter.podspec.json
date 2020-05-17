@@ -1,0 +1,22 @@
+{
+  "name": "craftyDateFormatter",
+  "version": "0.1.0",
+  "summary": "A short description of craftyDateFormatter.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/craftycoders/craftyDateFormatter",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "craftycoders": "lyle@craftycoders.io"
+  },
+  "source": {
+    "git": "https://github.com/craftycoders/craftyDateFormatter.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "craftyDateFormatter/Classes/**/*"
+}

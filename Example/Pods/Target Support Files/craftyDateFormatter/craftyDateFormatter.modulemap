@@ -1,0 +1,6 @@
+framework module craftyDateFormatter {
+  umbrella header "craftyDateFormatter-umbrella.h"
+
+  export *
+  module * { export * }
+}

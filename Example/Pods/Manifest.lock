@@ -1,0 +1,27 @@
+PODS:
+  - craftyDateFormatter (0.1.0)
+  - Nimble (7.3.4)
+  - Quick (1.2.0)
+
+DEPENDENCIES:
+  - craftyDateFormatter (from `../`)
+  - Nimble (~> 7.0)
+  - Quick (~> 1.2.0)
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  craftyDateFormatter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  craftyDateFormatter: 2068d0f8c5b3a4056a3e40c9babe150399b5870e
+  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+
+PODFILE CHECKSUM: 62d3f046e79534271dcdba682a93be5cd2f4a1b6
+
+COCOAPODS: 1.9.1
