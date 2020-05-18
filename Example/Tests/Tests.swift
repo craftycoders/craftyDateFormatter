@@ -6,45 +6,28 @@ import craftyDateFormatter
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {
-        describe("these will fail") {
-
-            it("can do maths") {
-                expect(1) == 2
-            }
-
-            it("can read") {
-                expect("number") == "string"
-            }
-
-            it("will eventually fail") {
-                expect("time").toEventually( equal("done") )
-            }
+        describe("will convert string to date") {
             
-            context("these will pass") {
-
-                it("can do maths") {
-                    expect(23) == 23
+             it("yyyy-MM-dd'T'HH:mm:ss.SZ") {
+                guard let date = "2020-05-14T18:25:43.511Z".formatToDate(.jsonFriendly1) else {
+                    fail("cannot generate string from given data")
+                    return
                 }
-
-                it("can read") {
-                    expect("🐮") == "🐮"
+                expect(String(describing: date)) == "2020-05-14 18:25:43 +0000"
+             }
+        }
+        
+        describe("will convert date to string") {
+            
+             it("MM/dd/yy") {
+                guard let date = "2020-05-14T18:25:43.511Z".formatToDate(.jsonFriendly1) else {
+                    fail("cannot generate string from given data")
+                    return
                 }
-
-                it("will eventually pass") {
-                    var time = "passing"
-
-                    DispatchQueue.main.async {
-                        time = "done"
-                    }
-
-                    waitUntil { done in
-                        Thread.sleep(forTimeInterval: 0.5)
-                        expect(time) == "done"
-
-                        done()
-                    }
-                }
-            }
+                
+                let dateAsString = date.formatToString(.monthDayYear)
+                expect(dateAsString) == "05/14/20"
+             }
         }
     }
 }
