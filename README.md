@@ -1,6 +1,6 @@
 # craftyDateFormatter
 
-[![CI Status](https://img.shields.io/travis/craftycoders/craftyDateFormatter.svg?style=flat)](https://travis-ci.org/craftycoders/craftyDateFormatter)
+[![CI Status](https://travis-ci.com/craftycoders/craftyDateFormatter.svg?branch=master)](https://travis-ci.org/craftycoders/craftyDateFormatter)
 [![Version](https://img.shields.io/cocoapods/v/craftyDateFormatter.svg?style=flat)](https://cocoapods.org/pods/craftyDateFormatter)
 [![License](https://img.shields.io/cocoapods/l/craftyDateFormatter.svg?style=flat)](https://cocoapods.org/pods/craftyDateFormatter)
 [![Platform](https://img.shields.io/cocoapods/p/craftyDateFormatter.svg?style=flat)](https://cocoapods.org/pods/craftyDateFormatter)
