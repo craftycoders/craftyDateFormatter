@@ -1,12 +1,12 @@
 PODS:
   - craftyDateFormatter (0.1.0)
-  - Nimble (7.3.4)
-  - Quick (1.2.0)
+  - Nimble (8.0.9)
+  - Quick (2.2.0)
 
 DEPENDENCIES:
   - craftyDateFormatter (from `../`)
-  - Nimble (~> 7.0)
-  - Quick (~> 1.2.0)
+  - Nimble
+  - Quick
 
 SPEC REPOS:
   trunk:
@@ -18,10 +18,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  craftyDateFormatter: 2068d0f8c5b3a4056a3e40c9babe150399b5870e
-  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
-  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  craftyDateFormatter: ccbca94a6c567b6d9ebe993045d027ea4702feb8
+  Nimble: 98b888285a615fd34f20e61753cf58ea1402bde4
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
 
-PODFILE CHECKSUM: bfcb2b06b6b038ee17d61b84eefa1d77ff74713d
+PODFILE CHECKSUM: 1da263f79a3c37a409a32d30f7458444429aa217
 
 COCOAPODS: 1.9.1
