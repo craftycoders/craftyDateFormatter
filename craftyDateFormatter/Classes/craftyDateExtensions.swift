@@ -18,12 +18,19 @@ public enum CraftyDateFormat: String {
     case jsonFriendly3 = "yyyy-MM-dd'T'HH:mm:ss"
     
     //TODO: Add more date formats
-    //CHALLENGE: Make this framework expandable. User should be able to add their own formats
 }
 
 public extension Date {
-    func formatToString(_ format: CraftyDateFormat, timeZone: TimeZone = TimeZone(abbreviation: "UTC")!) -> String? {
-        let formatter: DateFormatter = DateFormatter(format.rawValue)
+    ///craftyDateFormatter:
+    ///Using the predefined commonly used formats in the enum CraftyDateFormat
+    func formatToString(_ outputStringFormat: CraftyDateFormat, timeZone: TimeZone = TimeZone(abbreviation: "UTC")!) -> String? {
+        formatToString(outputStringFormat.rawValue, timeZone: timeZone)
+    }
+    
+    ///craftyDateFormatter:
+    ///For formats not defined in the enum CraftyDateFormat. Adding new cases to the enum is also another option.
+    func formatToString(_ outputStringFormat: String, timeZone: TimeZone = TimeZone(abbreviation: "UTC")!) -> String? {
+        let formatter: DateFormatter = DateFormatter(outputStringFormat)
         formatter.timeZone = timeZone
         
         let result = formatter.string(from: self)
@@ -31,7 +38,7 @@ public extension Date {
         if !result.isEmpty {
             return result
         }
-        print("CraftyDateFormatter: Incorrect format. \(format.rawValue) \(self)")
+        print("CraftyDateFormatter: Incorrect format. \(outputStringFormat) \(self)")
         return nil
     }
     
@@ -39,15 +46,24 @@ public extension Date {
 }
 
 public extension String {
-    //Reference string must match the selected format. Otherwise, result will be nil.
-    func formatToDate(_ format: CraftyDateFormat, timeZone: TimeZone = TimeZone(abbreviation: "UTC")!) -> Date? {
-         let formatter: DateFormatter = DateFormatter(format.rawValue)
+    ///craftyDateFormatter:
+    ///Required inputStringFormat should match the string format. Otherwise, result will be nil.
+    ///Output: yyyy-MM-dd HH:mm:ss ZZZZ
+    func formatToDate(_ inputStringFormat: CraftyDateFormat, timeZone: TimeZone = TimeZone(abbreviation: "UTC")!) -> Date? {
+        formatToDate(inputStringFormat.rawValue, timeZone: timeZone)
+    }
+    
+    ///craftyDateFormatter:
+    ///Required inputStringFormat should match the string format. Otherwise, result will be nil.
+    ///Output: yyyy-MM-dd HH:mm:ss ZZZZ
+    func formatToDate(_ inputStringFormat: String, timeZone: TimeZone = TimeZone(abbreviation: "UTC")!) -> Date? {
+         let formatter: DateFormatter = DateFormatter(inputStringFormat)
          formatter.timeZone = timeZone
          
         if let result = formatter.date(from: self) {
             return result
         }
-        print("CraftyDateFormatter: Incorrect format. \(format.rawValue) \(self)")
+        print("CraftyDateFormatter: Incorrect format. \(inputStringFormat) \(self)")
         return nil
      }
 }
