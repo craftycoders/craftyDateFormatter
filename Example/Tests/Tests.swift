@@ -2,7 +2,7 @@
 
 import Quick
 import Nimble
-import craftyDateFormatter
+@testable import craftyDateFormatter
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {
