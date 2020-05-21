@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'craftyDateFormatter'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Clean and simple way to format dates on Swift.'
 
 # This description is used to generate tags and improve search results.
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = 'Formatting dates has always been a pain. Writing extensions at the beginning of each project for the attempt to make things easy is ideal but repetitive. This library allows you to get the same results with way less effort. Clean and elegant. See for yourself!'
+  s.description      = 'Formatting dates has always been a pain. Writing extensions at the beginning of each project for the attempt to make things easy is ideal but repetitive. This library allows you to get the same results with way less effort. Clean and elegant human-readable formats.'
 
   s.homepage         = 'https://github.com/craftycoders/craftyDateFormatter'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'

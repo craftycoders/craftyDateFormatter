@@ -9,7 +9,7 @@ class TableOfContentsSpec: QuickSpec {
         describe("will convert string to date") {
             
              it("yyyy-MM-dd'T'HH:mm:ss.SZ") {
-                guard let date = "2020-05-14T18:25:43.511Z".formatToDate(.jsonFriendly1) else {
+                guard let date = "2020-05-14T18:25:43.511Z".formatToDate(.formatJSONFriendly1) else {
                     fail("cannot generate string from given data")
                     return
                 }
@@ -20,12 +20,12 @@ class TableOfContentsSpec: QuickSpec {
         describe("will convert date to string") {
             
              it("MM/dd/yy") {
-                guard let date = "2020-05-14T18:25:43.511Z".formatToDate(.jsonFriendly1) else {
+                guard let date = "2020-05-14T18:25:43.511Z".formatToDate(.formatJSONFriendly1) else {
                     fail("cannot generate string from given data")
                     return
                 }
                 
-                let dateAsString = date.formatToString(.monthDayYear)
+                let dateAsString = date.formatToString(.format081420)
                 expect(dateAsString) == "05/14/20"
              }
         }
